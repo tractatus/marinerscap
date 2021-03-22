@@ -5,7 +5,7 @@ Setup python environment and install bowtie2.
 ```
 cd OligoMiner
 conda env create -f environment.yml
-conda activate mariner
+conda activate probeMining
 cd ..
 conda install bowtie2
 ```

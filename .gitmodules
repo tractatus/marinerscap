@@ -1,0 +1,3 @@
+[submodule "OligoMiner"]
+	path = OligoMiner
+	url = https://github.com/beliveau-lab/OligoMiner

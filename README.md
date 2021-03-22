@@ -1,5 +1,14 @@
 # :boat: :anchor: marinerscap :anchor: :boat:
 
+1. Make sure you have [conda](https://docs.conda.io/en/latest/miniconda.html) installed. 
+
+2. Clone this repo, then create and activate the provided [environment](./environment.yml):
+
+```
+git clone https://github.com/tractatus/marinerscap.git
+cd marinerscap
+```
+
 Setup python environment and install bowtie2.
 
 ```

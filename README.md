@@ -1,4 +1,4 @@
-# marinerscap
+# marinerscap :anchor: :boat:
 
 Setup python environment and install bowtie2.
 

@@ -13,7 +13,8 @@ conda install bowtie2
 Then download a human genome index:
 
 ```
-echo "$(tput setaf 2) DOWNLOADING HUMAN GENOME INDEX (4Gb). This will take some time. " $i $(tput sgr 0)
+echo "$(tput setaf 2) DOWNLOADING HUMAN GENOME INDEX (4Gb)." 
+echo "$(tput sgr 0) This will take some time." 
 curl https://genome-idx.s3.amazonaws.com/bt/GRCh37.zip --output GRCh37.zip
 unzip GRCh37.zip
 ```

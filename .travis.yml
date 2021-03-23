@@ -30,6 +30,7 @@ install:
   # should not need changing.
 
   # - conda create --yes -n probeMiner python=$TRAVIS_PYTHON_VERSION
+  - cd OligoMiner
   - conda env create -f environment.yml
   - source activate probeMiner
 

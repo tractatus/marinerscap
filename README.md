@@ -1,7 +1,7 @@
 # :boat: :anchor: marinerscap :anchor: :boat:
 [![Build Status](https://travis-ci.com/tractatus/marinerscap.svg?token=XzUeqSSuF44YQrbkvFT5&branch=main)](https://travis-ci.com/tractatus/marinerscap)
 
-This is a simple shell script to design oligo probes for _in situ_ sequencing purchasing from [IDT](https://www.idtdna.com/site/order/oligoentry). All you need to do is to download the desired `cdna.fasta` file from Ensemble. For example [this is the API call](https://useast.ensembl.org/Homo_sapiens/Export/Output/Gene?db=core;flank3_display=0;flank5_display=0;g=ENSG00000139618;output=fasta;strand=feature;param=cdna;_format=Text) to get `BRCA2` cDNA:
+This is a simple shell script to design oligo probes for _in situ_ hybridization and purchasing from [IDT](https://www.idtdna.com/site/order/oligoentry). All you need to do is to download the desired `cdna.fasta` file from Ensemble. For example [this is the API call](https://useast.ensembl.org/Homo_sapiens/Export/Output/Gene?db=core;flank3_display=0;flank5_display=0;g=ENSG00000139618;output=fasta;strand=feature;param=cdna;_format=Text) to get `BRCA2` cDNA:
 
 ```
 https://useast.ensembl.org/Homo_sapiens/Export/Output/Gene?db=core;

@@ -1,3 +1,5 @@
+cd OligoMiner
+
 for i in `find ../cDNA/ -name "*.fasta" -type f`; do
     echo "$(tput setaf 1) Finding candidates for " $i $(tput sgr 0)
     filename=$(basename -- "$i")

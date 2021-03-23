@@ -14,6 +14,14 @@ param=cdna;
 _format=Text
 ```
 
+Just place the `.cdna.fasta` file in the `cDNA` folder. And run the shell script from main directory:
+
+```
+sh designprobes.sh
+```
+
+## Installation.
+
 1. Install [GitHub](https://desktop.github.com/)  if you dont have it. 
 
 2. Make sure you have [conda](https://docs.conda.io/en/latest/miniconda.html) installed. 
@@ -46,6 +54,5 @@ unzip GRCh37.zip
 
 Then run the design tool.
 ```
-cd OligoMiner
 sh designprobes.sh
 ```

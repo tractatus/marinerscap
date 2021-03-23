@@ -7,6 +7,7 @@ include:
 # should currently be able to use Python 2.6, 2.7, or 3.3 or later. The
 # NUMPY and SCIPY versions are set here as an example, but you can
 # add/remove environment variables, and use them below during the install.
+# private repo so make sure to run travis-cl.com
 
 - python: 2.7
 env: NUMPY=1.9 SCIPY=0.15

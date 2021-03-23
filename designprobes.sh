@@ -24,7 +24,7 @@ for i in `find ../output/ -name "*.bed" -type f`; do
     filename=$(basename -- "$i")
     extension="${filename##*.}"
     filename="${filename%.*}"
-    python printIDT.py "../output/${filename}.bed" "${num}" > "../probe_order/${filename}.tsv"
+    python ../python/printIDT.py "../output/${filename}.bed" "${num}" > "../probe_order/${filename}.tsv"
     num=$(( $num + 1 ))
     cat "../probe_order/${filename}.tsv"
 done

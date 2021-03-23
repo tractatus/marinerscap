@@ -17,6 +17,7 @@ _format=Text
 Just place the `.cdna.fasta` file in the `cDNA` folder. And run the shell script from main directory:
 
 ```
+conda activate probeMining
 sh designprobes.sh
 ```
 

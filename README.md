@@ -41,7 +41,6 @@ cd OligoMiner
 conda env create -f environment.yml
 conda activate probeMining
 cd ..
-conda install bowtie2
 ```
 
 Then download a human genome index:

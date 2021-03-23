@@ -1,4 +1,5 @@
 # :boat: :anchor: marinerscap :anchor: :boat:
+[![Build Status](https://travis-ci.com/tractatus/marinerscap.svg?token=XzUeqSSuF44YQrbkvFT5&branch=main)](https://travis-ci.com/tractatus/marinerscap)
 
 1. Make sure you have [conda](https://docs.conda.io/en/latest/miniconda.html) installed. 
 

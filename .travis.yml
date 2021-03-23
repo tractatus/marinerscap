@@ -7,13 +7,12 @@ include:
 # should currently be able to use Python 2.6, 2.7, or 3.3 or later. The
 # NUMPY and SCIPY versions are set here as an example, but you can
 # add/remove environment variables, and use them below during the install.
-# private repo so make sure to run travis-cl.com
 
 - python: 2.7
 env: NUMPY=1.9 SCIPY=0.15
 
 - python: 2.7
-env: NUMPY=1.8 SCIPY=0.14 BIOPYTHON=1.70 BOWTIE2=2.3.5.1 JELLYFISH=2.2.10 NUPACK=3.0.6 PIP=20.1.1 SCIKIT=0.20.4
+env: NUMPY=1.8 SCIPY=0.14
 
 before_install:
 
@@ -30,8 +29,8 @@ install:
 # We just set up a conda environment with the right Python version. This
 # should not need changing.
 
-- conda create --yes -n probeMining python=$TRAVIS_PYTHON_VERSION
-- source activate probeMining
+- conda create --yes -n test python=$TRAVIS_PYTHON_VERSION
+- source activate test
 
 # Below, include the dependencies you want to install with conda, optionally
 # specifying versions used in the matrix above. If you split this into
@@ -39,7 +38,7 @@ install:
 # the first package to install (for every conda install command) otherwise
 # numpy may be automatically upgraded.
 
-- conda install --yes numpy=$NUMPY scipy=$SCIPY biopython=$BIOPYTHON bowtie2=$BOWTIE2 jellyfish=$JELLYFISH nupack=$NUPACK pip=$PIP scikit-learn=$SCIKIT
+- conda install --yes numpy=$NUMPY scipy=$SCIPY astropy matplotlib pytest pip
 
 # You can also install some dependencies with pip if not available in conda
 
@@ -47,4 +46,4 @@ install:
 
 script:
 
-# - py.test  # will run all tests in the package
+- py.test  # will run all tests in the package

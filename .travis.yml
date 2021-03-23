@@ -48,5 +48,5 @@ install:
 
 script:
 
-  - py.test  # will run all tests in the package
+  - python ../python/printIDT.py ../output/VIM_cDNA.bed  # will run all tests in the package
 

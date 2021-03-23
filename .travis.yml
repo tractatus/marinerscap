@@ -48,5 +48,5 @@ install:
 
 script:
 
-#  - py.test  # will run all tests in the package
+  - py.test  # will run all tests in the package
 

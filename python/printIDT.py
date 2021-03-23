@@ -8,6 +8,9 @@ from Bio.Seq import Seq
 
 def main():
     """Prints output for IDT order."""
+    print ("This is the name of the script: ", sys.argv[0])
+    print ("Number of arguments: ", len(sys.argv))
+    print ("The arguments are: " , str(sys.argv))
 
     filename = sys.argv[1] #"../output/VIM_cDNA.bed"
     barcodeN = int(sys.argv[2])

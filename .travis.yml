@@ -32,7 +32,7 @@ install:
   # - conda create --yes -n probeMiner python=$TRAVIS_PYTHON_VERSION
   - cd OligoMiner
   - conda env create -f environment.yml
-  - source activate probeMiner
+  - source activate probeMining
 
   # Below, include the dependencies you want to install with conda, optionally
   # specifying versions used in the matrix above. If you split this into

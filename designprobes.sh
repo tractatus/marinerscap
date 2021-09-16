@@ -1,3 +1,6 @@
+#To pass three arguments
+args=("$@")
+
 cd OligoMiner
 
 for i in `find ../cDNA/ -name "*.fasta" -type f`; do
@@ -14,7 +17,7 @@ for i in `find ../output/ -name "*.fastq" -type f`; do
     filename=$(basename -- "$i")
     extension="${filename##*.}"
     filename="${filename%.*}"
-    bowtie2 -x ../GRCh37/GRCh37 -U ../output/${i} --no-hd -t -k 100 --very-sensitive-local -S "../output/${filename}.sam"
+    bowtie2 -x ../${args[0]}/${args[0]} -U ../output/${i} --no-hd -t -k 100 --very-sensitive-local -S "../output/${filename}.sam"
     python outputClean.py -u -f "../output/${filename}.sam" -o "../output/${filename}"
 done
 

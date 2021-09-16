@@ -44,7 +44,7 @@ install:
 
   # You can also install some dependencies with pip if not available in conda
 
-  # - pip install ...
+  # - pip install ... pyensembl install --release 77 --species homo_sapiens
 
 script:
 

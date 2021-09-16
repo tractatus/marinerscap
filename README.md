@@ -14,11 +14,11 @@ param=cdna;
 _format=Text
 ```
 
-Just place the `.cdna.fasta` file in the `cDNA` folder. And run the shell script from main directory:
+Just place the `.cdna.fasta` file in the `cDNA` folder. And run the shell script from main directory with the genome of choice as input argument to the shell script (here I use GRCh37 with bwotie2 indexes stored in `./GRCh37/GRCh37/`):
 
 ```
 conda activate probeMining
-sh designprobes.sh
+sh designprobes.sh GRCh37
 ```
 
 ## Installation.

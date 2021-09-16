@@ -15,7 +15,7 @@ def main():
     with open(filename) as csvfile:
         data = list(csv.reader(csvfile, delimiter='\t'))
 
-    primer = 'CGGTGCATACACTA' # M13 rev CAGGAAACAGCTATGAC
+    primer = 'CAGGAAACAGCTATGAC' # M13 rev CAGGAAACAGCTATGAC prev CGGTGCATACACTA
     barcode2 = ''
     UDP0003 = 'ATATGAGACG'
     UDP0007 = 'AGAGCACTAG'
